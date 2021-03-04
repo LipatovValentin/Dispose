@@ -43,14 +43,13 @@ namespace Dispose
             }
             else
             {
-                if (disposing)
+                if (disposing == true)
                 {
                     this._fileStream?.Dispose();
                 }
-                else
-                {
-                    // Dispose of any unmanaged resources
-                }
+                
+                // Dispose of any unmanaged resources
+                
                 this._disposed = true;
             }
         }
